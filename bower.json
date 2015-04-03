@@ -1,8 +1,8 @@
 {
-  "name": "databind",
-  "version": "0.4.0",
-  "homepage": "https://github.com/grnadav/databind",
-  "description": "Two way data binding, dependant on nothing",
+  "name": "databind-additional-input-types",
+  "version": "0.4.1",
+  "homepage": "https://github.com/rdblakemore/databind",
+  "description": "Two way data binding, dependent on nothing; support listinging to 'input' event for HTML 5 input types",
   "main": "src/DataBind.min.js",
   "moduleType": [
     "amd",
@@ -15,7 +15,8 @@
     "databinding"
   ],
   "authors": [
-    "Nadav Greenberg <grnadav@gmail.com>"
+    "Nadav Greenberg <grnadav@gmail.com>",
+    "Rob Blakemore <rdblakemore@gmail.com>"
   ],
   "license": "MIT",
   "ignore": [
