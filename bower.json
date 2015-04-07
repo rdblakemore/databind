@@ -1,6 +1,6 @@
 {
   "name": "databind-additional-input-types",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "homepage": "https://github.com/rdblakemore/databind",
   "description": "Two way data binding, dependent on nothing; support listinging to 'input' event for HTML 5 input types",
   "main": "src/DataBind.min.js",

@@ -515,10 +515,10 @@
      * @returns {string} - event name
      */
     function getEventNameForEl(el) {
-        if (['checkbox', 'radio', 'select-one', 'select-multiple', 'password'].indexOf(el.type) >= 0) {
+        if (['checkbox', 'radio', 'select-one', 'select-multiple'].indexOf(el.type) >= 0) {
             return 'change';
         }
-        if (['text', 'textarea', 'email', 'url', 'week', 'time', 'search', 'tel', 'range', 'number', 'month', 'datetime-local', 'date', 'color'].indexOf(el.type) >= 0) {
+        if (['text', 'textarea', 'email', 'url', 'week', 'time', 'search', 'tel', 'range', 'number', 'month', 'datetime-local', 'date', 'color', 'password'].indexOf(el.type) >= 0) {
             return 'input';
         }
     }
@@ -1099,7 +1099,7 @@
 
         return watchable;
     }
-    
+
     function unbindTemplate(el, template, model) {
         // safe jQuery stripping
         var simpleEl = getBareDomElement(el);
@@ -1107,13 +1107,13 @@
             arguments[0] = simpleEl;
             return unbindTemplate.apply(this, arguments);
         }
-        
+
         // regular unbind of el and model in case the template has kay bindings
         unbind(el, model);
-        
+
         // remove all watchers on the watchable
         el.watchable.unwatch();
-        
+
         // unwatch model
         WatchJS.unwatch(model);
     }
