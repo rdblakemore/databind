@@ -446,7 +446,7 @@
             }
             return el.checked;
         }
-        if (['text', 'textarea', 'select-one', 'email', 'url', 'week', 'time', 'search', 'tel', 'range', 'number', 'month', 'datetime-local', 'date', 'color', 'password'].indexOf(el.type) >= 0) {
+        if (['text', 'textarea', 'select-one', 'email', 'url', 'week', 'time', 'search', 'tel', 'range', 'number', 'month', 'datetime-local', 'date', 'color', 'password', 'hidden'].indexOf(el.type) >= 0) {
             if (isSetter) {
                 el.value = newVal;
             }
@@ -518,7 +518,7 @@
         if (['checkbox', 'radio', 'select-one', 'select-multiple'].indexOf(el.type) >= 0) {
             return 'change';
         }
-        if (['text', 'textarea', 'email', 'url', 'week', 'time', 'search', 'tel', 'range', 'number', 'month', 'datetime-local', 'date', 'color', 'password'].indexOf(el.type) >= 0) {
+        if (['text', 'textarea', 'email', 'url', 'week', 'time', 'search', 'tel', 'range', 'number', 'month', 'datetime-local', 'date', 'color', 'password', 'hidden'].indexOf(el.type) >= 0) {
             return 'input';
         }
     }
